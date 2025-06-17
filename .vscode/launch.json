@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: TCP Client",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/simple_TCP_client.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "args": ["${input:host}", "${input:port}"]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "host",
+      "type": "promptString",
+      "description": "Enter server host (IP or hostname)"
+    },
+    {
+      "id": "port",
+      "type": "promptString",
+      "description": "Enter server port"
+    }
+  ]
+}
